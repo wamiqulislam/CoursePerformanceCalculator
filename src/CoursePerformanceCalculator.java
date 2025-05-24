@@ -126,18 +126,40 @@ public class CoursePerformanceCalculator {
             System.out.println("Finished course: " + courseName + "\n");
         }
 
-        // Generate report and save to file
-        try (PrintWriter writer = new PrintWriter(new FileWriter("report.txt"))) {
+        // Count existing reports in the file
+        int reportCount = 0;
+        File file = new File("report.txt");
+        if (file.exists()) {
+            try (Scanner fileScanner = new Scanner(file)) {
+                while (fileScanner.hasNextLine()) {
+                    String line = fileScanner.nextLine();
+                    if (line.startsWith("Report ")) {
+                        reportCount++;
+                    }
+                }
+            } catch (IOException e) {
+                System.out.println("Error reading report file: " + e.getMessage());
+            }
+        }
+
+        // Append new report to file
+        try (PrintWriter writer = new PrintWriter(new FileWriter("report.txt", true))) {
+            reportCount++;
+            writer.println("==============================================================================================================");
+            writer.println("Report " + reportCount);
+            writer.println("=========");
             for (Course course : courses) {
                 String report = course.generateReport();
                 System.out.println(report);        // Print to console
-                writer.println(report);            // Write to file
+                writer.println(report);            // Append to file
             }
-            System.out.println("Reports written to 'report.txt'");
+            writer.println();  // Extra newline
+            System.out.println("Reports appended to 'report.txt' as Report " + reportCount);
         } catch (IOException e) {
             System.out.println("Error writing to file: " + e.getMessage());
         }
     }
+
 
     private static List<Double> parseLine(String line, int expectedCount) {
         String[] parts = line.trim().split("\\s+");
