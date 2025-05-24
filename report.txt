@@ -1,10 +1,27 @@
-Course: dblab
+==============================================================================================================
+Report 1
+=========
+Course: Object Oriented Programming
 Assessment           Weighted Achieved (%)     Weighted Average (%)      Difference (%)           
 --------------------------------------------------------------------------------------------------------------
-lab work             16.80                     15.27                     1.53                     
-lab final            4.83                      4.58                      0.25                     
+Assignments          9.17                      8.25                      0.92                     
+Quizzes              12.75                     11.44                     1.31                     
+Mid Semester Exam    21.00                     19.00                     2.00                     
+End Semester Exam    40.00                     37.50                     2.50                     
 --------------------------------------------------------------------------------------------------------------
-TOTAL                21.64                     19.85                     1.78                     
-Total Weightage Covered: 22.50%
+TOTAL                82.92                     76.19                     6.73                     
+Total Weightage Covered: 100.00%
+
+
+Course: Database Systems
+Assessment           Weighted Achieved (%)     Weighted Average (%)      Difference (%)           
+--------------------------------------------------------------------------------------------------------------
+Assignments          4.75                      4.25                      0.50                     
+Mid Semester Exam    27.00                     25.00                     2.00                     
+End Semester Exam    55.25                     50.70                     4.55                     
+--------------------------------------------------------------------------------------------------------------
+TOTAL                87.00                     79.95                     7.05                     
+Total Weightage Covered: 100.00%
+
 
 
