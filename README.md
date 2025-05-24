@@ -1,4 +1,4 @@
-A calculator that shows how well you're doing compared to average in your Course, Made for NUSTs Grading System. Just go to Qalam and choose your course, enter the assessment name (quiz,assignemtn etc.) how many tests of that assesemnt have there been (eg. 6 quizes, or 3 assignments) and its weightage and then enter your marks, avg marks, and total marks as shown in example and you will get a report containing your weighted total, and the class's weighted average, as well the difference. You can do this for multiple courses.
+A calculator that shows how well you're doing compared to average in your Course, Made for NUSTs Grading System. Just go to Qalam and choose your course, enter the assessment name (quiz,assignment etc.) how many tests of that assesemnt have there been (eg. 6 quizes, or 3 assignments) and its weightage and then enter your marks, avg marks, and total marks as shown in example and you will get a report containing your weighted total, and the class's weighted average, as well the difference. You can do this for multiple courses.
 
 For reference, you get a B if difference is >0%, B+ if difference is >5%-7%, A if difference is >12%-15% etc. 
 
